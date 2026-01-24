@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/JUS DE FRUITS NATURE.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c44569 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.header h3 {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.95;
+}
+
+.description {
+    margin: 30px 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: #fff;
+    border-left: 5px solid #2ecc71;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.description:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.description h4 {
+    margin-bottom: 15px;
+    color: #2ecc71;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description p {
+    line-height: 1.8;
+    color: #e0e0e0;
+    font-size: 15px;
+}
+
+.description a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 5px;
+}
+
+.description a:hover {
+    color: #fff;
+    background: #ffd700;
+    transform: translateX(5px);
+}
+
+.products {
+    margin: 30px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(46, 204, 113, 0.1));
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.products ul {
+    list-style: none;
+}
+
+.products ul li {
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #2ecc71;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.products ul li:hover {
+    background: rgba(46, 204, 113, 0.2);
+    transform: translateX(10px);
+}
+
+.products ul li:last-child {
+    border-bottom: none;
+}
+
+.image_principale {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image_principale img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.image_principale img:hover {
+    transform: scale(1.05);
+}
+
+.separator {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2ecc71, transparent);
+    margin: 30px 0;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.nos_types_de_produit {
+    margin: 40px 0;
+}
+
+.nos_types_de_produit ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nos_types_de_produit ul li {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2), rgba(0, 0, 0, 0.6));
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(46, 204, 113, 0.3);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nos_types_de_produit ul li:hover {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.4), rgba(0, 0, 0, 0.8));
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(46, 204, 113, 0.3);
+    border-color: #2ecc71;
+}
+
+.nos_types_de_produit ul li img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.nos_types_de_produit ul li:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.nos_types_de_produit ul li {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2ecc71;
+}
+
+.contact_us {
+    margin: 40px 0;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.15), rgba(255, 107, 107, 0.15));
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid rgba(46, 204, 113, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.contact_us h2 {
+    color: #2ecc71;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact_us p {
+    font-size: 16px;
+    margin: 12px 0;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.contact_us p:nth-child(3),
+.contact_us p:nth-child(4),
+.contact_us p:nth-child(5) {
+    font-weight: 600;
+    color: #ffd700;
+    padding: 10px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 5px;
+    margin: 15px auto;
+    max-width: 400px;
+}
