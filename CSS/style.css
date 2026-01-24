@@ -20,10 +20,11 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     overflow: hidden;
-    padding: 30px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -45,18 +46,19 @@ body {
 }
 
 .navbar ul li {
-    display: inline;
-    margin: 0 20px;
+    display: inline-block;
+    margin: 10px 10px;
 }
 
 .navbar ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
-    padding: 8px 15px;
+    font-size: 14px;
+    padding: 8px 12px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    display: block;
 }
 
 .navbar ul li a:hover {
@@ -76,7 +78,7 @@ body {
 }
 
 .header h1 {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
@@ -88,10 +90,13 @@ body {
     letter-spacing: 2px;
     opacity: 0.95;
 }
-
+a{
+    text-decoration: none;
+    color: navy;
+}
 .description {
-    margin: 30px 0;
-    padding: 30px;
+    margin: 20px 0;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: #fff;
@@ -240,8 +245,9 @@ body {
 }
 
 .nos_types_de_produit ul li img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -296,5 +302,161 @@ body {
     background: rgba(255, 215, 0, 0.1);
     border-radius: 5px;
     margin: 15px auto;
-    max-width: 400px;
+ 
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .navbar {
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    
+    .navbar ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    .header {
+        padding: 25px 15px;
+        margin-bottom: 20px;
+    }
+    
+    .header h1 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    
+    .header h3 {
+        font-size: 16px;
+    }
+    
+    .description {
+        margin: 15px 0;
+        padding: 15px;
+        border-left-width: 4px;
+    }
+    
+    .description h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .description p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .container h1 {
+        font-size: 24px;
+        margin: 15px 0 10px 0;
+    }
+    
+    .nos_types_de_produit ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .nos_types_de_produit ul li {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .nos_types_de_produit ul li img {
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_us {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .contact_us h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .contact_us p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    body {
+        background-attachment: scroll;
+    }
+    
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+    
+    .header {
+        padding: 20px 10px;
+    }
+    
+    .header h1 {
+        font-size: 22px;
+    }
+    
+    .header h3 {
+        font-size: 14px;
+    }
+    
+    .description {
+        padding: 12px;
+        margin: 10px 0;
+    }
+    
+    .description h4 {
+        font-size: 18px;
+    }
+    
+    .container h1 {
+        font-size: 20px;
+    }
+    
+    .nos_types_de_produit ul {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    .nos_types_de_produit ul li {
+        padding: 12px;
+    }
+    
+    .nos_types_de_produit ul li img {
+        max-width: 100px;
+    }
+    
+    .contact_us {
+        padding: 15px;
+    }
+    
+    .contact_us h2 {
+        font-size: 20px;
+    }
+}   max-width: 400px;
 }
